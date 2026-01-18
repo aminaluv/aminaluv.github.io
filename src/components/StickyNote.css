@@ -1,8 +1,9 @@
 .sticky-note-wrapper {
   display: flex;
   align-items: flex-start;
-  gap: 7rem; /* Space between note and blueberry */
+  gap: 5rem; /* Space between note and blueberry */
   margin-left: 5rem;
+  margin-top: -2rem;
 }
 
 .note-container {
@@ -11,7 +12,7 @@
 }
 
 .sticky-note {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block;
 }
@@ -26,7 +27,7 @@
   max-width: 400px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  transform: rotate(-4deg); /* Slight rotation to match the note */
+  transform: rotate(-5deg); /* Slight rotation to match the note */
   transform-origin: left top; /* Rotate from top-left corner */
   padding-left: 15px; /* Add some padding to compensate for rotation */
   padding-top: 5px; /* Additional top padding for better alignment */
@@ -36,12 +37,12 @@
   /* color: #D2042D; */
   text-align: center;
   /* font-weight: bold; */
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .list-text {
   text-align: left;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .note-text ul {
@@ -49,7 +50,7 @@
 }
 
 .note-text li {
-  line-height: 1.8;
+  line-height: 2.5;
   margin-bottom: 0.5em;
 }
 
@@ -82,7 +83,7 @@
   font-family: var(--font-montserrat);
   font-size: 20px;
   line-height: 1.5;
-  color: #333;
+  color: black;
   text-align: left; /* Explicit left alignment */
   margin: 0; /* Remove any default margins */
   padding: 0; /* Remove any default padding */

@@ -1,9 +1,12 @@
 .top-nav-bar {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   padding: 1rem 2rem;
   background-color: #ffffff;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  z-index: 1000;
   font-family: 'Libre Baskerville';
 }
 
@@ -18,8 +21,8 @@
 }
 
 .pencil-image {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
 }
 

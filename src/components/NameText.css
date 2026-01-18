@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 8%;
 }
 
 .grid-image {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
 }
 
