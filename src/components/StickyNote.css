@@ -1,0 +1,90 @@
+.sticky-note-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 7rem; /* Space between note and blueberry */
+  margin-left: 5rem;
+}
+
+.note-container {
+  position: relative;
+  display: inline-block; /* Make container fit content */
+}
+
+.sticky-note {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.note-text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  font-family: var(--font-montserrat);
+  z-index: 10;
+  pointer-events: none;
+  max-width: 400px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transform: rotate(-4deg); /* Slight rotation to match the note */
+  transform-origin: left top; /* Rotate from top-left corner */
+  padding-left: 15px; /* Add some padding to compensate for rotation */
+  padding-top: 5px; /* Additional top padding for better alignment */
+}
+
+.header-text {
+  /* color: #D2042D; */
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 30px;
+}
+
+.list-text {
+  text-align: left;
+  font-size: 22px;
+}
+
+.note-text ul {
+  padding-left: 1.5em;
+}
+
+.note-text li {
+  line-height: 1.8;
+  margin-bottom: 0.5em;
+}
+
+.highlight {
+  background-color: #ffd60a;
+  color: black;
+  padding: 0 3px;
+}
+
+.bullet-points-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between bullet points */
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.bullet-point {
+  display: flex;
+  align-items: center; /* Align items to the top */
+  gap: 20px;
+  margin-top: 1rem;
+  max-width: 700px;
+  text-align: left; /* Ensure text alignment is left */
+  width: 100%; /* Take full width of container */
+}
+
+.bullet-text {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left; /* Explicit left alignment */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  width: 100%; /* Take remaining width */
+}

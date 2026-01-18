@@ -1,0 +1,56 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.grid-image {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+
+.grid-text {
+    font-family: 'Libre Baskerville';
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Libre Baskerville';
+    font-size: 2rem;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 80px;
+}
+
+.hello-text {
+    color: #D2042D;
+    display: inline-block;
+    pointer-events: auto;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.hello-text:hover {
+    animation: wave 0.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px) rotate(-3deg);
+    }
+    75% {
+        transform: translateX(5px) rotate(3deg);
+    }
+}
+
+.name-text {
+    color: black;
+}

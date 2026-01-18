@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import "./TopNavBar.css";
 import catImage from "../images/cat.png";
 
+import pencil_shaving from "../images/pencil.png";
+
 interface NavItem {
   label: string;
   id: string;
@@ -17,6 +19,7 @@ const navItems: NavItem[] = [
 const TopNavBar: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>(navItems[0].id);
   const [circlePosition, setCirclePosition] = useState<number>(0);
+  const [currentStarIndex, setCurrentStarIndex] = useState<number>(0);
   const navRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
 
@@ -44,11 +47,20 @@ const TopNavBar: React.FC = () => {
 
   return (
     <nav className="top-nav-bar" ref={navRef}>
+      <div className="pencil-container">
+        <img
+          src={pencil_shaving}
+          alt='pencil shaving'
+          className="pencil-image"
+        />
+      </div>
       <div className="nav-items-container">
         {navItems.map((item) => (
           <div
             key={item.id}
-            ref={(el) => { itemRefs.current[item.id] = el; }}
+            ref={(el) => {
+              itemRefs.current[item.id] = el;
+            }}
             className={`nav-item ${activeTab === item.id ? "active" : ""}`}
             onClick={() => handleTabClick(item.id)}
           >
@@ -69,4 +81,3 @@ const TopNavBar: React.FC = () => {
 };
 
 export default TopNavBar;
-
