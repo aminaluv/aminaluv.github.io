@@ -1,4 +1,3 @@
-import logo from "./images/circle.png";
 import "./App.css";
 import Home from "./pages/Home";
 
