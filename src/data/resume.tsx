@@ -164,11 +164,11 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Humanoid Walking Simulation",
+      title: "Bipedal Robot Locomotion with Reinforcement Learning",
       href: "https://neet.mit.edu/news/2026-certificate-ceremony#graduate-list",
       dates: "Feb 2026 - May 2026",
       active: true,
-      description: "",
+      description: "Used MuJoCo and Gymnasium environment to teach a humanoid to walk and navigate in simulation using reinforcement learning.",
       technologies: ["MuJoCo", "Gymnasium", "Python"],
       links: [
         {
@@ -213,7 +213,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/200B.jpg",
+      image: "/projects/200B_cones.jpg",
       video: "",
     },
   ],
