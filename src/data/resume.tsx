@@ -28,7 +28,6 @@ export const DATA = {
     { name: "Typescript", icon: Typescript },
     { name: "Python", icon: Python },
     { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
     { name: "Java", icon: Java },
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
