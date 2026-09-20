@@ -33,7 +33,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "aminaluv10@gmail.com",
@@ -41,14 +40,14 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/aminaluv",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/aminaluv/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -150,7 +149,8 @@ export const DATA = {
     {
       school: "Massachusetts Institute of Technology",
       href: "https://web.mit.edu/",
-      degree: "Bachelor of Science (BS) in Artificial Intelligence and Decision Making with a Minor in Management",
+      degree:
+        "Bachelor of Science (BS) in Artificial Intelligence and Decision Making with a Minor in Management",
       logoUrl: "/mit.png",
       start: "2022",
       end: "2026",
