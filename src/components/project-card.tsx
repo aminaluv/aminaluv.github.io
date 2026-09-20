@@ -68,7 +68,9 @@ export function ProjectCard({
           rel="noopener noreferrer"
           className="block"
         >
-          {video ? (
+          {image ? (
+            <ProjectImage src={image} alt={title} />
+          ) : video ? (
             <video
               src={video}
               autoPlay
@@ -77,8 +79,6 @@ export function ProjectCard({
               playsInline
               className="w-full h-48 object-cover"
             />
-          ) : image ? (
-            <ProjectImage src={image} alt={title} />
           ) : (
             <div className="w-full h-48 bg-muted" />
           )}

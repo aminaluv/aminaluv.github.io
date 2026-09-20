@@ -142,11 +142,11 @@ export default function Page() {
           <ProjectsSection />
         </BlurFade>
       </section>
-      <section id="contact">
+      {/* <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
         </BlurFade>
-      </section>
+      </section> */}
     </main>
   );
 }
